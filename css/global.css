@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html { font-size: 62.5% }
+body { background-color: #001; }
+
+.header {
+    background-color: #009;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    padding: 20px;
+}
+
+.content {
+    font-family: sans-serif;
+    background-color: rgba(255, 255, 255, .8);
+    margin: 5% 15%;
+    padding: 5% 5%
+}
+
+.title, .title-name {
+    text-align: center;
+    font-size: 2.7rem;
+    margin-bottom: 20px;
+}
+
+.chapter {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 2.7rem;
+    margin-bottom: 20px;
+}
+
+.chapter-name {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2.3rem;
+}
+
+.text > p, .sinopsys {
+    text-align: justify;
+    font-size: 2.1rem;
+    margin: 10px auto;
+}
+
+.chapter-text {
+    text-align: justify;
+    font-size: 2.1rem;
+    margin: 50px auto;
+}
+
+.genres {
+    text-align: center;
+    font-size: 2.1rem;
+    margin: 10px auto;
+}
+
+.links {
+    padding: 10px 0;
+}
+
+.links > p, .chapters > p{
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.chapters {
+    margin: 30px 0;
+}
+
+.links > ul, .chapters > ul {
+    font-size: 2.1rem;
+    margin-left: 25px;
+}
+
+.link-title, .chapter-link {
+    color: #333;
+    text-decoration: none;
+}
