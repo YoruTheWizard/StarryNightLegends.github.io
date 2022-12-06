@@ -11,7 +11,7 @@ html { font-size: 62.5% }
 :root {
     --header-bg: #009;
     --main-bg: #001;
-    --text-bg: rgba(255, 255, 255, .8);
+    --text-bg: rgba(255, 255, 255, .95);
     --header-color: #fff;
     --subtitle-color: #444;
     --text-color: #000;
@@ -23,6 +23,13 @@ html { font-size: 62.5% }
 body {
     background-color: var(--main-bg);
     color: var(--text-color);
+}
+
+.content {
+    font-family: sans-serif;
+    background-color: var(--text-bg);
+    margin: 5% 15%;
+    padding: 5% 5%
 }
 
 /* TEXT FORMAT */
@@ -45,13 +52,6 @@ body {
 }
 
 /* INDEX */
-
-.content {
-    font-family: sans-serif;
-    background-color: var(--text-bg);
-    margin: 5% 15%;
-    padding: 5% 5%
-}
 
 .title {
     text-align: center;
@@ -125,6 +125,8 @@ body {
     text-decoration: none;
 }
 
+.release-date { color: var(--subtitle-color) }
+
 /* CHAPTER */
 
 .chapter {
@@ -146,4 +148,65 @@ body {
     text-align: justify;
     font-size: 2.1rem;
     margin: 50px auto;
+}
+
+.author-message {
+    border-top: 3px solid var(--text-color);
+    text-align: justify;
+    font-size: 2.1rem;
+    margin: 50px auto;
+    padding: 20px 0;
+}
+
+.author-message > h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.author-message > p { margin-top: 20px }
+
+@media (min-width: 320px) and (max-width: 599px) {
+
+    .header { font-size: 2rem }
+
+    .content {
+        margin: 50px 0;
+        padding: 50px 15px;
+    }
+
+    .title, .title-name, .chapter, .author-message > h2 { font-size: 2.5rem }
+
+    .text > p, .sinopsys > p, .chapter-text, .author-message > p {
+        font-size: 2rem;
+        text-align: left;
+        line-height: 28px;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+
+    .header { font-size: 2.5rem }
+
+    .content { margin: 50px 20px }
+
+    .title, .title-name, .chapter, .author-message > h2 { font-size: 2.7rem }
+
+    .text > p, .sinopsys > p, .chapter-text, .author-message > p {
+        font-size: 2rem;
+        line-height: 25px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .header { font-size: 2.5rem }
+
+    .content { margin: 50px }
+
+    .text > p, .sinopsys > p, .chapter-text, .author-message > p {
+        line-height: 25px;
+    }
+
 }
